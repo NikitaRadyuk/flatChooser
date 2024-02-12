@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/flats_chooser
+    password: 12345678
+    username: postgres
+  task:
+    scheduling:
+      pool:
+        size: 1
+  sql:
+    init:
+      platform: postgres
+
+app:
+  jwt:
+    secret: NDQ1ZjAzNjQtMzViZi00MDRjLTljZjQtNjNjYWIyZTU5ZDYw
+    issuer: ITAcademy
+  feign:
+    audit-logs:
+      url: http://audit-service:8084
+
+server:
+  port: 8080

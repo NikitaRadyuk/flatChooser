@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/flats_chooser
+    password: 12345678
+    username: postgres
+
+user:
+  storage: MEMORY #MEMORY or JDBC
+
+server:
+  port: 8084
